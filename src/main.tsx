@@ -1,4 +1,4 @@
-import { createRoot } from "react-dom/client";
+import { render } from "react-dom";
 import App from "./App.tsx";
 import "./index.css";
 
@@ -10,8 +10,7 @@ function initApp() {
   }
   
   try {
-    const root = createRoot(rootElement);
-    root.render(<App />);
+    render(<App />, rootElement);
   } catch (error) {
     console.error("Failed to initialize React app:", error);
   }
