@@ -58,12 +58,12 @@ export default defineConfig(({ mode }) => ({
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
-        format: 'es'
+        format: 'umd',
+        name: 'App'
       },
     },
     assetsDir: 'assets',
     sourcemap: false,
-    target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari13.1'],
   },
   // Uncomment and adjust if deploying to GitHub Pages with a repository name
   // base: '/your-repo-name/',

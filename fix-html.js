@@ -19,22 +19,16 @@ publicFiles.forEach(({ src, dest }) => {
   }
 });
 
-// Ensure the HTML keeps type="module" for React 18 compatibility
+// Ensure regular script tags (no modules) for GitHub Pages
 const htmlPath = path.join(process.cwd(), 'dist', 'index.html');
 if (fs.existsSync(htmlPath)) {
   let html = fs.readFileSync(htmlPath, 'utf8');
   
-  // Debug: log the current HTML
-  console.log('Current script tag:', html.match(/<script[^>]*>/g));
-  
-  // Make sure script has type="module" for React 18
-  html = html.replace(/<script crossorigin/g, '<script type="module" crossorigin');
-  
-  // Debug: log the updated HTML
-  console.log('Updated script tag:', html.match(/<script[^>]*>/g));
+  // Remove type="module" if present
+  html = html.replace(/type="module"\s+/g, '');
   
   fs.writeFileSync(htmlPath, html);
-  console.log('✓ Ensured script has type="module" for React 18 compatibility');
+  console.log('✓ Ensured regular script tags for GitHub Pages compatibility');
 }
 
 console.log('✓ Build post-processing completed');
