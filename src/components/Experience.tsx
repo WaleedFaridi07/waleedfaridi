@@ -5,7 +5,7 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Integration Developer",
+      title: "Lead Developer",
       company: "TRATON Financial Services",
       period: "Present",
       current: true,
