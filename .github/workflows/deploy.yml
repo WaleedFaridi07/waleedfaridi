@@ -37,6 +37,9 @@ jobs:
       
     - name: Add CNAME for custom domain
       run: echo "waleedfaridi.com" > ./dist/CNAME
+      
+    - name: Add .nojekyll to disable Jekyll processing
+      run: touch ./dist/.nojekyll
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
