@@ -32,42 +32,11 @@ if (fs.existsSync(htmlPath)) {
     // Remove the original script tag
     html = html.replace(/<script[^>]*src="[^"]*"[^>]*><\/script>/g, '');
     
-    // Add dynamic loader script
-    const loaderScript = `
-    <script>
-      (function() {
-        function loadScript() {
-          // Try loading as module first
-          const script = document.createElement('script');
-          script.type = 'module';
-          script.crossOrigin = 'anonymous';
-          script.src = '${scriptSrc}';
-          
-          script.onerror = function() {
-            console.log('Module loading failed, trying as regular script...');
-            // Fallback: load as regular script
-            const fallbackScript = document.createElement('script');
-            fallbackScript.crossOrigin = 'anonymous';
-            fallbackScript.src = '${scriptSrc}';
-            fallbackScript.onerror = function() {
-              console.error('Failed to load script');
-            };
-            document.head.appendChild(fallbackScript);
-          };
-          
-          document.head.appendChild(script);
-        }
-        
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', loadScript);
-        } else {
-          loadScript();
-        }
-      })();
-    </script>
+    // Add simple script tag (IIFE format doesn't need modules)
+    const scriptTag = `<script crossorigin src="${scriptSrc}"></script>
   </body>`;
     
-    html = html.replace('</body>', loaderScript);
+    html = html.replace('</body>', scriptTag);
   }
   
   fs.writeFileSync(htmlPath, html);
