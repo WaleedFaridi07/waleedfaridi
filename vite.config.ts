@@ -57,9 +57,7 @@ export default defineConfig(({ mode }) => ({
         manualChunks: undefined,
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]',
-        format: 'umd',
-        name: 'App'
+        assetFileNames: 'assets/[name]-[hash].[ext]'
       },
     },
     assetsDir: 'assets',
