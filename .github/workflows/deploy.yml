@@ -34,6 +34,9 @@ jobs:
 
     - name: Build
       run: npm run build
+      
+    - name: Add CNAME for custom domain
+      run: echo "waleedfaridi.com" > ./dist/CNAME
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
