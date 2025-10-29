@@ -15,4 +15,15 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+    assetsDir: 'assets',
+    sourcemap: false,
+  },
+  // Uncomment and adjust if deploying to GitHub Pages with a repository name
+  // base: '/your-repo-name/',
 }));
