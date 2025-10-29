@@ -36,7 +36,7 @@ jobs:
       run: npm run build
       
     - name: Replace with static HTML
-      run: cp test-static.html dist/index.html
+      run: cp static-index.html dist/index.html
         
     - name: Add CNAME for custom domain
       run: echo "waleedfaridi.com" > ./dist/CNAME
