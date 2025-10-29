@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waleed Ahmad Faridi - Lead Developer & System Architect</title>
-    <meta name="description" content="Lead Developer and System Architect specializing in .NET, AWS, Azure, and modern web technologies. Expert in financial integrations and AI-powered solutions.">
+    <meta name="description"
+        content="Lead Developer and System Architect specializing in .NET, AWS, Azure, and modern web technologies. Expert in financial integrations and AI-powered solutions.">
     <meta name="author" content="Waleed Ahmad Faridi">
-    <meta name="keywords" content="Lead Developer, System Architect, .NET, AWS, Azure, React, Angular, Software Engineer, Stockholm">
-    
+    <meta name="keywords"
+        content="Lead Developer, System Architect, .NET, AWS, Azure, React, Angular, Software Engineer, Stockholm">
+
     <meta property="og:title" content="Waleed Ahmad Faridi - Lead Developer & System Architect">
-    <meta property="og:description" content="Lead Developer and System Architect specializing in .NET, AWS, Azure, and modern web technologies.">
+    <meta property="og:description"
+        content="Lead Developer and System Architect specializing in .NET, AWS, Azure, and modern web technologies.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
-    
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@lovable_dev">
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
-    
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
+
     <style>
         /* Reset and base styles */
         * {
@@ -26,7 +30,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
             --bg-primary: #1a1a1a;
             --bg-secondary: #2a2a2a;
@@ -35,7 +39,7 @@
             --accent: #00d4ff;
             --accent-hover: #00b8e6;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg-primary);
@@ -43,13 +47,13 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -58,7 +62,7 @@
             background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
             position: relative;
         }
-        
+
         .hero-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -66,7 +70,7 @@
             align-items: center;
             width: 100%;
         }
-        
+
         .hero-text h1 {
             font-size: 3.5rem;
             font-weight: 700;
@@ -76,17 +80,17 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .hero-text p {
             font-size: 1.25rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
         }
-        
+
         .hero-image {
             text-align: center;
         }
-        
+
         .hero-image img {
             width: 300px;
             height: 300px;
@@ -95,7 +99,7 @@
             border: 4px solid var(--accent);
             box-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
         }
-        
+
         /* Buttons */
         .btn {
             display: inline-block;
@@ -108,42 +112,42 @@
             transition: all 0.3s ease;
             margin-right: 1rem;
         }
-        
+
         .btn:hover {
             background: var(--accent-hover);
             transform: translateY(-2px);
         }
-        
+
         .btn-outline {
             background: transparent;
             color: var(--accent);
             border: 2px solid var(--accent);
         }
-        
+
         .btn-outline:hover {
             background: var(--accent);
             color: var(--bg-primary);
         }
-        
+
         /* Experience Section */
         .experience {
             padding: 6rem 0;
             background: var(--bg-secondary);
         }
-        
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
             color: var(--accent);
         }
-        
+
         .experience-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .experience-card {
             background: var(--bg-primary);
             padding: 2rem;
@@ -151,40 +155,40 @@
             border: 1px solid rgba(0, 212, 255, 0.2);
             transition: all 0.3s ease;
         }
-        
+
         .experience-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
         }
-        
+
         .experience-card h3 {
             color: var(--accent);
             margin-bottom: 0.5rem;
         }
-        
+
         .experience-card .company {
             color: var(--text-secondary);
             margin-bottom: 1rem;
         }
-        
+
         .experience-card .duration {
             color: var(--text-secondary);
             font-size: 0.9rem;
             margin-bottom: 1rem;
         }
-        
+
         /* Skills */
         .skills {
             padding: 6rem 0;
         }
-        
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
             margin-top: 2rem;
         }
-        
+
         .skill-tag {
             background: rgba(0, 212, 255, 0.1);
             color: var(--accent);
@@ -193,49 +197,50 @@
             text-align: center;
             border: 1px solid rgba(0, 212, 255, 0.3);
         }
-        
+
         /* Contact */
         .contact {
             padding: 6rem 0;
             background: var(--bg-secondary);
             text-align: center;
         }
-        
+
         .contact-links {
             display: flex;
             justify-content: center;
             gap: 2rem;
             margin-top: 2rem;
         }
-        
+
         .contact-link {
             color: var(--accent);
             text-decoration: none;
             font-size: 1.1rem;
             transition: color 0.3s ease;
         }
-        
+
         .contact-link:hover {
             color: var(--accent-hover);
         }
-        
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
-            
+
             .container {
                 padding: 0 1rem;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Hero Section -->
     <section class="hero">
@@ -243,7 +248,8 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Waleed Ahmad Faridi</h1>
-                    <p>Lead Developer & System Architect specializing in .NET, AWS, Azure, and modern web technologies. Expert in financial integrations and AI-powered solutions.</p>
+                    <p>Lead Developer & System Architect specializing in .NET, AWS, Azure, and modern web technologies.
+                        Expert in financial integrations and AI-powered solutions.</p>
                     <a href="#contact" class="btn">Get In Touch</a>
                     <a href="#experience" class="btn btn-outline">View Experience</a>
                 </div>
@@ -263,13 +269,15 @@
                     <h3>Lead Developer</h3>
                     <div class="company">Tech Company</div>
                     <div class="duration">2020 - Present</div>
-                    <p>Leading development teams and architecting scalable solutions using .NET, AWS, and modern web technologies.</p>
+                    <p>Leading development teams and architecting scalable solutions using .NET, AWS, and modern web
+                        technologies.</p>
                 </div>
                 <div class="experience-card">
                     <h3>System Architect</h3>
                     <div class="company">Financial Services</div>
                     <div class="duration">2018 - 2020</div>
-                    <p>Designed and implemented financial integration systems with focus on security and performance.</p>
+                    <p>Designed and implemented financial integration systems with focus on security and performance.
+                    </p>
                 </div>
                 <div class="experience-card">
                     <h3>Senior Developer</h3>
@@ -354,4 +362,5 @@
         });
     </script>
 </body>
+
 </html>
