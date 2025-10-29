@@ -1,200 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waleed Ahmad Faridi - Portfolio</title>
-  <style>
-    :root {
-      --bg-color: #f8f9fa;
-      --text-color: #212529;
-      --section-bg: white;
-      --chip-bg: #e9ecef;
-    }
-    body.dark-mode {
-      --bg-color: #121212;
-      --text-color: #f1f1f1;
-      --section-bg: #1e1e1e;
-      --chip-bg: #333;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      transition: background 0.3s, color 0.3s;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-      background: var(--section-bg);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    header {
-      text-align: center;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid #ccc;
-    }
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      margin: 0.2rem 0;
-    }
-    .contact, .skills, .languages {
-      margin-bottom: 2rem;
-    }
-    .section-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #aaa;
-      padding-bottom: 0.5rem;
-    }
-    .job {
-      margin-bottom: 1.5rem;
-    }
-    .job h3 {
-      margin: 0;
-      font-size: 1.1rem;
-    }
-    .job p, .job li {
-      margin: 0.2rem 0;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .skills span, .languages span {
-      display: inline-block;
-      background: var(--chip-bg);
-      margin: 0.2rem;
-      padding: 0.4rem 0.8rem;
-      border-radius: 5px;
-      font-size: 0.9rem;
-    }
-    .toggle-btn {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: #ccc;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-    .social-links {
-      text-align: center;
-      margin-top: 1rem;
-    }
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: var(--text-color);
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <button class="toggle-btn" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waleed Ahmad Faridi - Lead Developer & System Architect</title>
+    <meta name="description" content="Lead Developer and System Architect specializing in .NET, AWS, Azure, and modern web technologies. Expert in financial integrations and AI-powered solutions." />
+    <meta name="author" content="Waleed Ahmad Faridi" />
+    <meta name="keywords" content="Lead Developer, System Architect, .NET, AWS, Azure, React, Angular, Software Engineer, Stockholm" />
 
-  <div class="container">
-    <header>
-      <img src="https://raw.githubusercontent.com/WaleedFaridi07/waleedfaridi/main/1694448756477.jpeg" alt="Waleed Ahmad Faridi">
-      <h1>Waleed Ahmad Faridi</h1>
-      <p>Experienced Software Developer with 10+ years in full-stack development and high-performance applications.</p>
-      <p><strong>Phone:</strong> +46 (0) 72 071 26 67 | <strong>Email:</strong> waleedfaridi647@gmail.com</p>
-      <div class="social-links">
-        <a href="https://github.com/waleedfaridi07" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/waleedfaridi" target="_blank">LinkedIn</a>
-      </div>
-    </header>
+    <meta property="og:title" content="Waleed Ahmad Faridi - Lead Developer & System Architect" />
+    <meta property="og:description" content="Lead Developer and System Architect specializing in .NET, AWS, Azure, and modern web technologies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <section class="skills">
-      <div class="section-title">Skills</div>
-      <div>
-        <span>.NET 9</span><span>Angular</span><span>AWS</span><span>Azure</span><span>AWS CDK</span>
-        <span>C#</span><span>CI/CD</span><span>Gitlab</span><span>Docker</span><span>Kubernetes</span>
-        <span>React.JS</span><span>SQL Server</span><span>PostgreSQL</span><span>GCP</span>
-        <span>Integration Testing</span><span>Unit Testing</span>
-      </div>
-    </section>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-    <section class="languages">
-      <div class="section-title">Languages</div>
-      <div><span>English</span></div>
-    </section>
-
-    <section>
-      <div class="section-title">Work Experience</div>
-      <div class="job">
-        <h3>Senior Software Developer, Traton Financial Services <span style="float:right; font-weight:normal">Sep 2023 – Present</span></h3>
-        <ul>
-          <li>Delivery and enhancement of financial integrations.</li>
-          <li>Collaboration with departments for integration processes.</li>
-          <li>Used: .NET 9, ReactJS, Angular, AWS.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Software Developer, Transfer Galaxy AB <span style="float:right; font-weight:normal">Feb 2022 – Sep 2023</span></h3>
-        <ul>
-          <li>Lead developer for backend core system.</li>
-          <li>Developed AML, KYC, Risk Score systems.</li>
-          <li>Integrated RIA, TRAPETS, BANK ID, etc.</li>
-          <li>Used: .NET 6, Angular, ReactJS, Azure, GCP.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Senior Consultant Development, System Limited <span style="float:right; font-weight:normal">Aug 2018 – Feb 2022</span></h3>
-        <ul>
-          <li>Consulted for TransRe and Ascent365.</li>
-          <li>Worked on full-stack products using .NET, Angular, React.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Senior Software Engineer, Technisoft Consulting <span style="float:right; font-weight:normal">Jan 2016 – Aug 2018</span></h3>
-        <ul>
-          <li>Full-stack developer on Jobee.pk platform.</li>
-          <li>Used .NET Core, Angular, SQL Server.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Senior Software Engineer, Broadpeak Technologies <span style="float:right; font-weight:normal">Aug 2017 – Jul 2018</span></h3>
-        <ul>
-          <li>Worked on EDIBLE ARRANGEMENTS platform deployed in 5000+ stores.</li>
-          <li>Used .NET 4, .NET Core, Angular, SQL Server.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Senior Software Engineer, NESPAK <span style="float:right; font-weight:normal">Jul 2017 – Aug 2017</span></h3>
-        <ul>
-          <li>Worked on WRMIS project for irrigation systems in Punjab.</li>
-          <li>Used .NET 4, WebForms, SQL Server.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Senior Software Engineer, Trisoft Technologies <span style="float:right; font-weight:normal">Jun 2014 – Jan 2016</span></h3>
-        <ul>
-          <li>Worked on yieldWerx semiconductor testing platform.</li>
-          <li>Used .NET 4, Angular, SQL Server.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="education">
-      <div class="section-title">Education</div>
-      <p><strong>Bachelor of Science in Information Technology</strong><br>
-      University of Education (Feb 2010 – May 2014)</p>
-    </section>
-  </div>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
