@@ -32,11 +32,8 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Build React app to get assets
+    - name: Build
       run: npm run build
-      
-    - name: Replace with static HTML
-      run: cp static-index.html dist/index.html
         
     - name: Add CNAME for custom domain
       run: echo "waleedfaridi.com" > ./dist/CNAME
