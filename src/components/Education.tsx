@@ -18,10 +18,22 @@ const Education = () => {
   ];
 
   const certifications = [
-    "AWS Certified AI Practitioner",
-    "Microsoft Certified: Azure Fundamentals",
-    "C# TestDome",
-    "Scania Hack 2025"
+    {
+      name: "AWS Certified AI Practitioner",
+      link: "https://www.credly.com/badges/e6323fc7-0f8a-43c9-bf84-413a691e8bca/linked_in_profile"
+    },
+    {
+      name: "Microsoft Certified: Azure Fundamentals",
+      link: "https://www.credly.com/badges/24eaa026-8b20-4bed-9d70-f5dd1d34f688?source=linked_in_profile"
+    },
+    {
+      name: "C# TestDome",
+      link: null
+    },
+    {
+      name: "Scania Hack 2025",
+      link: "https://www.credly.com/badges/e8288a24-3021-4f9f-aa2d-dbfb63f0ff56/linked_in_profile"
+    }
   ];
 
   return (
@@ -80,7 +92,18 @@ const Education = () => {
                     className="flex items-start gap-3 p-3 rounded-lg hover:bg-secondary/30 transition-colors"
                   >
                     <div className="w-2 h-2 rounded-full bg-primary mt-2" />
-                    <p className="flex-1 text-foreground">{cert}</p>
+                    {cert.link ? (
+                      <a 
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+                      >
+                        {cert.name}
+                      </a>
+                    ) : (
+                      <p className="flex-1 text-foreground">{cert.name}</p>
+                    )}
                   </div>
                 ))}
               </div>
