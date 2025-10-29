@@ -29,12 +29,12 @@ jobs:
         node-version: '18'
         cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Build
-      run: npm run build
-      
+    - name: Create static build
+      run: |
+        mkdir -p dist
+        cp static-index.html dist/index.html
+        cp -r public/* dist/ 2>/dev/null || true
+        
     - name: Add CNAME for custom domain
       run: echo "waleedfaridi.com" > ./dist/CNAME
       
