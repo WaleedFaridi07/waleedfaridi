@@ -6,17 +6,17 @@ const About = () => {
     {
       icon: Code2,
       title: "Technical Excellence",
-      description: "Expertise in .NET, AWS, Azure, and modern web frameworks"
+      description: "Architecting reliable backend, integration, and cloud platforms for large-scale enterprise environments"
     },
     {
       icon: Sparkles,
       title: "AI & Innovation",
-      description: "Leading AI integration projects using ChatGPT APIs and AWS ML services"
+      description: "Building MCP-enabled agentic workflows and production AI systems that solve high-value engineering problems"
     },
     {
       icon: Users,
       title: "Leadership",
-      description: "Leading development teams and architecting enterprise-scale solutions"
+      description: "Bridging engineering leadership, delivery execution, and practical AI adoption across teams"
     }
   ];
 
@@ -26,8 +26,9 @@ const About = () => {
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Professional with focus on system architecture, bringing wealth of experience in 
-            designing and optimizing complex systems.
+            AI Engineer and Lead Developer with deep experience in enterprise architecture,
+            platform engineering, and applied AI. I build practical AI systems that improve developer
+            productivity, automation, and knowledge access in real production environments.
           </p>
         </div>
 
@@ -55,16 +56,19 @@ const About = () => {
 
         <Card className="p-8 bg-gradient-subtle border-border">
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold">Current Role</h3>
+            <h3 className="text-2xl font-semibold">Current Role at TRATON Group</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Currently working as <span className="text-foreground font-semibold">Lead Developer at TRATON Financial Services</span>, 
-              leading multiple integration projects involving AI via ChatGPT Assistant APIs and AWS services like 
-              Bedrock and Sagemaker. Developing and supporting financial integrations between major brands 
-              including Scania, MAN, International, and Volkswagen.
+              Currently working as <span className="text-foreground font-semibold">AI Engineer at TRATON Group</span>,
+              where I design and deliver applied AI capabilities for engineering teams. My work includes
+              building MCP servers, agentic workflows, and internal AI tooling that supports code assistance,
+              context-aware automation, knowledge retrieval, and delivery acceleration while meeting enterprise
+              standards for reliability, security, and governance.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Known for collaborative approach and delivering results that align with organizational goals. 
-              Reliable and adaptable, skilled in system integration, project management, and problem-solving.
+              I work hands-on with LangChain, Langfuse, Onyx, CodeRabbit, Google ADK, Amazon Bedrock,
+              and SageMaker alongside .NET and cloud-native services. The focus is on measurable outcomes:
+              production-ready AI capabilities that scale across TRATON brands, strengthen developer workflows,
+              and bring modern AI patterns into everyday engineering delivery.
             </p>
           </div>
         </Card>

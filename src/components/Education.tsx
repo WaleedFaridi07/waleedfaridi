@@ -6,11 +6,11 @@ const Education = () => {
   const education = [
     {
       degree: "Bachelor of Science in Information Technology",
-      institution: "University of Education (PK)",
+      institution: "University of Education, Pakistan",
       period: "01/2010 – 01/2014"
     },
     {
-      degree: "FSC Pre Engineering",
+      degree: "FSc Pre-Engineering",
       institution: "Garrison Degree College",
       period: "01/2008 – 01/2009",
       grade: "A"
@@ -67,7 +67,7 @@ const Education = () => {
                   <p className="text-sm text-muted-foreground">{edu.period}</p>
                   {edu.grade && (
                     <Badge variant="secondary" className="bg-secondary/50">
-                      GPA: {edu.grade}
+                      Grade: {edu.grade}
                     </Badge>
                   )}
                 </div>
@@ -111,7 +111,7 @@ const Education = () => {
 
             <div className="p-6 rounded-lg bg-primary/5 border border-primary/20">
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Continuously updating skills through professional certifications in cloud computing, 
+                Continuously expanding expertise through professional certifications in cloud computing,
                 AI/ML, and modern development practices.
               </p>
             </div>

@@ -30,7 +30,7 @@ const Hero = () => {
                 <Avatar className="relative w-72 h-72 md:w-96 md:h-96 ring-4 ring-primary/20 shadow-glow">
                   <AvatarImage 
                     src={profilePhoto} 
-                    alt="Waleed Ahmad Faridi - Lead Developer & System Architect"
+                    alt="Waleed Ahmad Faridi - Lead Developer / AI Engineer"
                     className="object-cover object-[center_20%]"
                   />
                   <AvatarFallback className="text-6xl">WF</AvatarFallback>
@@ -45,13 +45,14 @@ const Hero = () => {
                   Waleed Ahmad Faridi
                 </h1>
                 <p className="text-xl md:text-2xl text-primary font-semibold">
-                  Lead Developer & System Architect
+                  Lead Developer / AI Engineer
                 </p>
               </div>
 
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Expert in system architecture and integration, specializing in .NET, AWS, Azure, 
-                and modern web technologies. Building scalable solutions for global financial services.
+                AI Engineer and Lead Developer delivering agentic platforms, intelligent developer tooling,
+                and enterprise-grade integrations across .NET, AWS, Azure, and modern web technologies.
+                Specialized in turning LLM capabilities into secure, scalable products with real operational value.
               </p>
 
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm md:text-base">

@@ -5,46 +5,53 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Lead Developer",
-      company: "TRATON Financial Services",
+      title: "AI Engineer",
+      company: "TRATON Group",
       period: "Present",
       current: true,
-      description: "Leading multiple integration projects involving AI via ChatGPT Assistant APIs and AWS services like Bedrock and Sagemaker. Developing and supporting financial integrations between major brands Scania, MAN, International and Volkswagen.",
-      tech: [".NET 9+", "AWS Services", "Azure", "PostgreSQL", "AI/ML"]
+      description: "Leading applied AI initiatives by building MCP-enabled platforms, agentic workflows, and LLM-powered engineering capabilities. Working across LangChain, Langfuse, Onyx, CodeRabbit, Google ADK, Amazon Bedrock, and SageMaker to deliver production-ready AI systems that improve developer productivity, internal knowledge access, and execution across the broader TRATON ecosystem.",
+      tech: ["Agentic AI", "MCP Servers", "LangChain", "Langfuse", "Google ADK", "Amazon Bedrock", "Onyx"]
+    },
+    {
+      title: "Lead Developer",
+      company: "TRATON Financial Services",
+      period: "Prior Role",
+      description: "Led multiple integration initiatives and supported financial systems across major TRATON brands, including Scania, MAN, International, and Volkswagen, combining architecture ownership with hands-on delivery across modern cloud platforms.",
+      tech: [".NET 9+", "AWS Services", "Azure", "PostgreSQL", "System Integration"]
     },
     {
       title: "Senior Software Developer",
       company: "Scania Group",
       period: "09/2023 – 06/2024",
-      description: "Worked as a Senior FullStack developer on multiple financial integrations.",
+      description: "Worked as a senior full-stack developer on multiple financial integrations.",
       tech: [".NET 8", "AWS Services", "Azure", "PostgreSQL", "SQL Server"]
     },
     {
       title: "Lead Developer",
       company: "Transfer Galaxy",
       period: "07/2022 – 09/2023",
-      description: "Led backend system development, enhanced KYC process, Risk score process and multiple integrations for global remittance.",
+      description: "Led backend system development, enhanced KYC and risk-scoring processes, and delivered multiple integrations for a global remittance platform.",
       tech: [".NET 6", "Angular", "SQL Server"]
     },
     {
-      title: "Senior Consultant Development",
+      title: "Senior Consultant Developer",
       company: "Visionet Systems Inc.",
       period: "08/2018 – 07/2022",
-      description: "Senior Consultant Developer with Ascent360, a global marketing platform. Led migration from Webforms to .NET core.",
+      description: "Senior consultant developer for Ascent360, a global marketing platform. Led the migration from Web Forms to .NET Core.",
       tech: [".NET Core", "React", "SQL Server", "Azure Services"]
     },
     {
-      title: "Senior Consultant Development",
+      title: "Senior Consultant Developer",
       company: "Systems Limited",
       period: "08/2018 – 07/2022",
-      description: "Lead developer for TransRe Portfolio Management system for Transatlantic Reinsurance Company.",
+      description: "Lead developer for the TransRe portfolio management system for Transatlantic Reinsurance Company.",
       tech: ["Angular", ".NET Core", "SQL Server", "Azure Services"]
     },
     {
       title: "Senior Software Engineer",
       company: "BroadPeak Technologies",
       period: "07/2017 – 07/2018",
-      description: "Developed new features and enhancements for Edible Arrangements, a franchise system with 500+ franchises in USA.",
+      description: "Developed new features and enhancements for Edible Arrangements, a franchise platform serving more than 500 locations in the USA.",
       tech: ["ASP.NET", "SQL Server"]
     }
   ];
@@ -55,7 +62,7 @@ const Experience = () => {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Work Experience</h2>
           <p className="text-xl text-muted-foreground">
-            Building enterprise solutions across financial services and technology sectors
+            Building enterprise software, AI platforms, and automation systems with measurable business impact
           </p>
         </div>
 

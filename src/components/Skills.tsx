@@ -1,18 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Cloud, Database, TestTube, Layers, Globe } from "lucide-react";
+import { Code, Cloud, Database, TestTube, Layers, Globe, Bot } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
       title: "Languages & Frameworks",
-      skills: [".NET", "Angular", "ReactJs", "C#"]
+      skills: [".NET", "C#", "Angular", "React", "TypeScript"]
+    },
+    {
+      icon: Bot,
+      title: "AI Engineering",
+      skills: ["MCP Servers", "Agentic Workflows", "LangChain", "Langfuse", "Google ADK", "Onyx", "CodeRabbit"]
     },
     {
       icon: Cloud,
       title: "Cloud Platforms",
-      skills: ["AWS Services", "Azure Services", "GCP"]
+      skills: ["Amazon Bedrock", "SageMaker", "AWS Services", "Azure Services", "GCP"]
     },
     {
       icon: Database,
@@ -22,12 +27,12 @@ const Skills = () => {
     {
       icon: Layers,
       title: "DevOps & Tools",
-      skills: ["Docker", "Kubernetes", "Datadog", "Sonarqube", "CI/CD"]
+      skills: ["Docker", "Kubernetes", "Datadog", "SonarQube", "CI/CD", "GitHub Actions"]
     },
     {
       icon: TestTube,
       title: "Testing",
-      skills: ["Test containers", "Integration Tests", "Unit Tests", "End-to-end Testing"]
+      skills: ["Testcontainers", "Integration Tests", "Unit Tests", "End-to-End Testing"]
     },
     {
       icon: Globe,
@@ -42,7 +47,7 @@ const Skills = () => {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Core Skills</h2>
           <p className="text-xl text-muted-foreground">
-            Comprehensive technology stack and expertise
+            Enterprise engineering, agentic AI systems, and cloud platform expertise for modern product teams
           </p>
         </div>
 

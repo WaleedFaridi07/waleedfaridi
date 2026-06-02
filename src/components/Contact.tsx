@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -35,7 +35,7 @@ const Contact = () => {
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Get In Touch</h2>
           <p className="text-xl text-muted-foreground">
-            Let's discuss your next project or opportunity
+            Let's discuss your next role, project, or AI initiative.
           </p>
         </div>
 
